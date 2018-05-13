@@ -66,7 +66,7 @@ public class GUI extends JFrame {
 	private int instrument = 0;
 	private double BPM = 120;
 	private double length = 0.25;
-	private int volume = 127;
+	private int volume;
 	private int key = 50;
 	private int octave = 6;
 	private String pitch = "C";
@@ -395,7 +395,7 @@ public class GUI extends JFrame {
 				if (prop.getProperty("Volume")!=null){
 					volume = Integer.parseInt(prop.getProperty("Volume"));
 				} else {
-					volume = 1;
+					volume = 127;
 				}
 				
 				if (prop.getProperty("Octave")!=null){
